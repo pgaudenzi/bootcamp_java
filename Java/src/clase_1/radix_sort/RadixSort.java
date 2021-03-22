@@ -13,7 +13,7 @@ public class RadixSort {
         final int max = getMaxLength(numbers);
 
         //Convert int to string list
-        List<String> stringList = toStringList(numbers, max, '0');
+        List<String> stringList = toStringListLpadList(numbers, max, '0');
 
         //Sort
         sort(stringList, max, base);
