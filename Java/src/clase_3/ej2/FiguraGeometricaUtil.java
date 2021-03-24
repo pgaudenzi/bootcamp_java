@@ -7,7 +7,7 @@ public class FiguraGeometricaUtil {
         for (FiguraGeometrica figura : figuras) {
             area += figura.area();
         }
-        return area/2;
+        return area/n;
     }
 
 }
