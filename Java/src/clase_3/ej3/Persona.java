@@ -1,6 +1,6 @@
 package clase_3.ej3;
 
-public class Persona implements Precedable<Persona> {
+public class Persona {
 
     private String nombre;
     private int dni;
@@ -8,13 +8,6 @@ public class Persona implements Precedable<Persona> {
     public Persona(String nombre, int dni) {
         this.nombre = nombre;
         this.dni = dni;
-    }
-
-    @Override
-    public int precedeA(Persona persona) {
-        if (this.dni > persona.getDni()) return -1;
-        if (this.dni < persona.getDni()) return 1;
-        return 0;
     }
 
     public String getNombre() {
